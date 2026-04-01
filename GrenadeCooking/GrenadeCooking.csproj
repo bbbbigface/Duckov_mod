@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BBBA0A5D-216B-45DA-9788-45BD7D47DDA0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GrenadeCooking</RootNamespace>
+    <AssemblyName>GrenadeCooking</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\Managed\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\ALINE.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\andywiecko.BurstTriangulator.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Animancer.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Animancer.FSM.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Assembly-CSharp.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\AstarPathfindingProject.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\BakeryRuntimeAssembly.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Bilibili.BDS.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Cinemachine.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Clipper2Lib.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\com.rlabrecque.steamworks.net.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\DemiLib.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\DOTween.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\DOTween.Modules.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\DOTweenPro.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\DOTweenPro.Scripts.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Drawing.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\EasySave3.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\ECM2.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Eflatun.SceneReference.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\EPO.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\EPODemo.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\EPOHDRP.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\EPOURP.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\EPOUtilities.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\FlexReader.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\FMODUnity.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\FMODUnityResonance.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\FOW.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\HBAO.Demo.Runtime.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\HBAO.Demo.Universal.Runtime.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\HBAO.Runtime.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\HBAO.Universal.Runtime.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\ICSharpCode.SharpZipLib.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\ItemStatsSystem.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\KAnimationCore.Runtime.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\LeTai.TranslucentImage.Demo.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\LeTai.TranslucentImage.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\LeTai.TranslucentImage.UniversalRP.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\LeTai.TrueShadow.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\MeshCombineStudio.Runtime.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\MeshExtension.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\MiniExcel.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Mono.Security.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\mscorlib.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\netstandard.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Newtonsoft.Json.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\NodeCanvas.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\PackageTools.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\ParadoxNotion.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Pathfinding.Ionic.Zip.Reduced.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Plugins.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\sc.modeling.splines.runtime.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\ShapesRuntime.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\ShapesSamples.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Sirenix.OdinInspector.Attributes.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Sirenix.Serialization.Config.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Sirenix.Serialization.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Sirenix.Utilities.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\SodaLocalization.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\SymmetryBreak.TastyGrassShader.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\SymmetryBreakStudio.TastyGrassShader.Examples.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\System.Collections.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\System.ComponentModel.Composition.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\System.Configuration.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\System.Core.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\System.Data.DataSetExtensions.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\System.Data.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\System.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\System.Drawing.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\System.EnterpriseServices.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\System.IO.Compression.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\System.IO.Compression.FileSystem.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\System.Net.Http.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\System.Numerics.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\System.Runtime.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\System.Runtime.Extensions.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\System.Runtime.InteropServices.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\System.Runtime.Serialization.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\System.Security.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\System.ServiceModel.Internals.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\System.Transactions.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\System.Xml.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\System.Xml.Linq.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\TeamSoda.Duckov.Core.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\TeamSoda.Duckov.Utilities.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\TeamSoda.MiniLocalizor.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UISplineRenderer.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UniTask.Addressables.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UniTask.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UniTask.DOTween.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UniTask.Linq.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UniTask.TextMeshPro.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.2D.Tilemap.Extras.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.Addressables.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.Burst.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.Burst.Unsafe.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.Collections.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.Collections.LowLevel.ILSupport.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.InputSystem.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.InputSystem.ForUI.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.Mathematics.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.MemoryProfiler.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.Polybrush.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.ProBuilder.Csg.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.ProBuilder.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.ProBuilder.KdTree.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.ProBuilder.Poly2Tri.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.ProBuilder.Stl.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.Profiling.Core.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.Recorder.Base.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.Recorder.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.RenderPipeline.Universal.ShaderLibrary.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.RenderPipelines.Core.Runtime.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.RenderPipelines.Core.ShaderLibrary.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.RenderPipelines.Universal.Config.Runtime.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.RenderPipelines.Universal.Runtime.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.RenderPipelines.Universal.Shaders.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.ResourceManager.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.ScriptableBuildPipeline.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.Splines.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.TextMeshPro.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.Timeline.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.VisualScripting.Antlr3.Runtime.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.VisualScripting.Core.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.VisualScripting.Flow.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\Unity.VisualScripting.State.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.AccessibilityModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.AIModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.AndroidJNIModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.AnimationModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.ARModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.AssetBundleModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.AudioModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.ClothModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.ClusterInputModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.ClusterRendererModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.ContentLoadModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.CoreModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.CrashReportingModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.DirectorModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.DSPGraphModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.GameCenterModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.GIModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.GridModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.HotReloadModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.ImageConversionModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.IMGUIModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.InputLegacyModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.InputModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.JSONSerializeModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.LocalizationModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.NVIDIAModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.ParticleSystemModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.PerformanceReportingModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.Physics2DModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.PhysicsModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.ProfilerModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.PropertiesModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.ScreenCaptureModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.SharedInternalsModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.SpriteMaskModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.SpriteShapeModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.StreamingModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.SubstanceModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.SubsystemsModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.TerrainModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.TerrainPhysicsModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.TextCoreFontEngineModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.TextCoreTextEngineModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.TextRenderingModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.TilemapModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.TLSModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.UI.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.UIElementsModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.UIModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.UmbraModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.UnityAnalyticsCommonModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.UnityAnalyticsModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.UnityConnectModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.UnityCurlModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.UnityTestProtocolModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.UnityWebRequestAudioModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.UnityWebRequestModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.UnityWebRequestTextureModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.UnityWebRequestWWWModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.VehiclesModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.VFXModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.VideoModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.VirtualTexturingModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.VRModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.WindModule.dll" />
+    <Reference Include="D:\programming\projects\Mods_Unity\Duckov\Managed\UnityEngine.XRModule.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="extensions\CharacterInputControl_GrenadePin.cs" />
+    <Compile Include="extensions\CharacterMainControl_dummyReference.cs" />
+    <Compile Include="extensions\Grenade_DummyExt.cs" />
+    <Compile Include="extensions\InputManager_GrenadePin.cs" />
+    <Compile Include="extensions\Skill_Grenade_DummyExt.cs" />
+    <Compile Include="ModBehaviour.cs" />
+    <Compile Include="HarmonyLoad.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="HelperRenderer.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
